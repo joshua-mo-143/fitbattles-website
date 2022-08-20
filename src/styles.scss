@@ -177,7 +177,7 @@ $invisible: 0;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                font-size: 12px;
+                font-size: 14px;
                 .name {
                     margin-left: 10px;
                 }
@@ -206,6 +206,7 @@ $invisible: 0;
             font-weight: 700;
             box-shadow: 5px 5px rgba(0,0,0,0.3);
             .legal-item {
+                font-size: 14px;
                 .link {
                 &:hover {
                     color: $hotpink;
