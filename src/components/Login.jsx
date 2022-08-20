@@ -5,7 +5,7 @@ export const Login = () => {
     <div className="login-container">
     <form>
     <h1 style={{textAlign: 'center'}}>Login</h1>
-    <hr style={{width: "500px", marginTop: "-25px"}}/>
+    <hr style={{width: "250px", marginTop: "-25px"}}/>
     <label>
         Username: <input type="text"/> 
     </label>

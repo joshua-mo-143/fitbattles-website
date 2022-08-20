@@ -125,6 +125,7 @@ button:active {
 
 .announcement {
   height: 30px;
+  width: 100%;
   background: #FFFDD0;
   margin: 0;
   padding: 5px 0px;
@@ -375,9 +376,10 @@ button:active {
 .login-container form {
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 50px;
   padding-top: 100px;
   background: #FFFDD0;
-  width: 40%;
+  width: 800px;
   height: 400px;
   display: flex;
   justify-content: center;
