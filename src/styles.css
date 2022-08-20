@@ -154,6 +154,7 @@ button:active {
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 12px;
 }
 .footer-container .left .contact-list .contact-item .name {
   margin-left: 10px;
@@ -530,7 +531,12 @@ button:active {
   padding-top: 50px;
   text-align: center;
 }
+.competition-container h1, .newspost-container h1, .competition-container h2, .newspost-container h2 {
+  text-align: center;
+  font-size: 20px;
+}
 .competition-container p, .newspost-container p {
+  text-align: center;
   margin: 10px 200px;
 }
 
@@ -538,6 +544,42 @@ button:active {
   padding: 100px;
 }
 
+@media only screen and (max-width: 280px) {
+  .user-container .profile-pic-container img {
+    height: 200px;
+  }
+  .outfit-container {
+    margin-top: 250px;
+    width: 250px;
+    font-size: 12px;
+    height: 200px;
+    padding: 50px;
+  }
+  .outfit-container .outfitinfo-container {
+    border: none;
+    background: none;
+  }
+  .outfit-container .outfitinfo-container img {
+    height: 270px;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    border: none;
+    box-shadow: none;
+  }
+  .outfit-container .outfitinfo-container .outfit-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .submitoutfit-container form {
+    margin-top: 100px;
+  }
+  .submitoutfit-container form .fit-desc {
+    width: 90%;
+    height: 100px;
+  }
+}
 @media screen and (max-width: 480px) {
   .navbar-container .navbar-bot {
     justify-content: center;
@@ -599,5 +641,55 @@ button:active {
   }
   .user-container .profile-pic-container img {
     height: 400px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .footer-container .left {
+    margin-right: 25px;
+  }
+  .footer-container .left .contact-list {
+    width: 95%;
+  }
+  .footer-container .center {
+    font-size: 12px;
+    width: 95%;
+  }
+  .footer-container .right {
+    flex: 0;
+  }
+  .announcement {
+    font-size: 14px;
+  }
+  .login-container form {
+    width: 90%;
+  }
+  .login-container form hr {
+    display: none;
+  }
+  .register-container, .submitoutfit-container {
+    height: 110vh;
+  }
+  .register-container form, .submitoutfit-container form {
+    height: 900px;
+    width: 95%;
+  }
+  .register-container form h1, .submitoutfit-container form h1 {
+    margin-top: -300px;
+  }
+  .register-container form hr, .submitoutfit-container form hr {
+    display: none;
+  }
+  .submitoutfit-container form {
+    height: 600px;
+  }
+  .submitoutfit-container form .fit-desc {
+    width: 90%;
+    height: 100px;
+  }
+  .competition-container p, .newspost-container p {
+    text-align: center;
+    margin: 0 -50px;
+    margin-bottom: 20px;
+    padding: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

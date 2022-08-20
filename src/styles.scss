@@ -170,6 +170,7 @@ $invisible: 0;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                font-size: 12px;
                 .name {
                     margin-left: 10px;
                 }
@@ -594,14 +595,69 @@ $invisible: 0;
     padding: 100px;
     padding-top: 50px;
     text-align: center;
+
+    h1, h2 {
+        text-align: center;
+        font-size: 20px;
+    }
     p {
+        text-align: center;
         margin: 10px 200px;
     }
+
+
 }
 
 .newspost-container {
     @extend .competition-container;
     padding: 100px;
+}
+
+@media only screen and (max-width: 280px) {
+    .user-container {
+        .profile-pic-container {
+            img {
+            height: 200px;
+            }
+        }
+    }
+
+    .outfit-container {
+        margin-top: 250px;
+        width: 250px;
+        font-size: 12px;
+        height: 200px;
+        padding: 50px;
+
+        .outfitinfo-container {
+            border: none;
+            background: none;
+            img {
+                height: 270px;
+                object-fit: scale-down;
+                border: none;
+                box-shadow: none;
+
+            }
+            .outfit-info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .submitoutfit-container {
+        form {
+            margin-top: 100px;
+            
+            .fit-desc {
+                width: 90%;
+                height: 100px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -687,6 +743,68 @@ $invisible: 0;
             img {
             height: 400px;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .footer-container {
+        .left {
+            margin-right: 25px;
+            .contact-list {
+                width: 95%;
+            }
+        }
+        .center {
+            font-size: 12px;
+            width: 95%;
+        }
+        .right {
+            flex: 0;
+        }
+    }
+
+    .announcement {
+        font-size: 14px;
+    }
+    .login-container {
+        form {
+        width: 90%;
+        hr {
+            display: none;
+        }
+        }
+    }
+
+    .register-container {
+        height: 110vh;
+        form {
+            height: 900px;
+            width: 95%;
+            h1 {
+                margin-top: -300px;
+            }
+            hr {
+                display: none;
+            }
+        }
+    }
+    .submitoutfit-container {
+        form {
+            height: 600px;
+            .fit-desc {
+                width: 90%;
+                height: 100px;
+            }
+        }
+    }
+
+    .competition-container {
+        p {
+            text-align: center;
+            margin: 0 -50px;
+            margin-bottom: 20px;
+            padding: 0;
         }
     }
 }
