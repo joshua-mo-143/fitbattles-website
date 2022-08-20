@@ -9,9 +9,11 @@ export const OutfitsPage = () => {
   return (
     <>
     <Navbar/>
+    <div className="push-footer">
     <Announcement/>
     <OutfitList/>
     <Footer/>
+    </div>
     </>
   )
 }

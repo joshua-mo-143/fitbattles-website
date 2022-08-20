@@ -38,6 +38,14 @@ button:active {
   color: white;
 }
 
+.push-footer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .dvdr-container {
   display: flex;
   justify-content: center;
@@ -63,7 +71,7 @@ button:active {
 
 .navbar-container {
   display: flex;
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
   background: #e8175d;
   color: white;

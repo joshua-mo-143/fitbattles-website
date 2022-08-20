@@ -7,6 +7,7 @@ export const EnterCompetition = () => {
   return (
   <>
     <Navbar/>
+    <div className="push-footer">
     <div className="competition-container">
         <h1>Welcome to Season 2 of FitBattles!</h1>
         <h2>The current theme is: Darkwear</h2>
@@ -14,6 +15,7 @@ export const EnterCompetition = () => {
         <Link to="/submitfit"><button>Register now</button></Link>
     </div>
     <Footer/>
+    </div>
     </>
   )
 }

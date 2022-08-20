@@ -6,7 +6,9 @@ export const OutfitPage = () => {
 
   return (<>
     <Navbar/>
+    <div className="push-footer">
     <Outfit/>
+    </div>
     </>
   )
 }

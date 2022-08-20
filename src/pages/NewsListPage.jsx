@@ -7,8 +7,10 @@ export const NewsListPage = () => {
   return (
     <>
     <Navbar/>
+    <div className="push-footer">
     <NewsList/>
     <Footer/>
+    </div>
     </>
   )
 }

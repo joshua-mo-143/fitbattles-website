@@ -11,12 +11,14 @@ export const Home = () => {
   return (
     <div className="wrapper">
     <Navbar/>
+    <div className="push-footer">
     <Announcement/>
     <Slider/>
     <Divider/>
     <NewsList/>
     <Link to="/newslist" style={{zIndex: '2', marginTop: '-150px', textAlign: 'center', marginBottom: '50px'}}><button>View more news</button></Link>
     <Footer/>
+    </div>
     </div>
   )
 }
